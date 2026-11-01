@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#285b3b">
+  <title>Bhavageetham Prayaanna</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f0df;
+      font-family: Arial, sans-serif;
+      color: #542b2b;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      padding: 38px 24px;
+      background: #fffaf0;
+      border: 2px solid #c5a15b;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: #285b3b;
+      color: #f5d88c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-size: 58px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 27px;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .open-button {
+      display: block;
+      padding: 16px 12px;
+      background: #285b3b;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 9px;
+    }
+
+    .open-button:hover {
+      background: #1d452c;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #80634c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">B</div>
+
+    <h1>Bhavageetham Prayaanna</h1>
+    <div class="subtitle">The Complete Art Shoppe</div>
+
+    <a class="open-button"
+       href="https://script.google.com/macros/s/AKfycbwGAM4K53ht1fhI4lsnWQfBC-Je1CSTjNZ2JGd_RbaXIgfThyJpcHa11JlvCmuK4B7s/exec">
+       Open Frame Price Calculator
+    </a>
+
+    <div class="footer">
+      Frame Price Calculator
+    </div>
+  </div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker.register("./sw.js");
+      });
+    }
+  </script>
+</body>
+</html>
